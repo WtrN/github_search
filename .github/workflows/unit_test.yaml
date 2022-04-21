@@ -18,6 +18,6 @@ jobs:
       - name: flutter pub get
         run: flutter pub get
       - name: Flutter analyze
-        run: flutter analyze .
+        run: flutter analyze ./lib
       - name: flutter unit test
         run: flutter test
