@@ -18,9 +18,10 @@ jobs:
       - name: "Install Tools"
         run: |
           ./.github/workflows/scripts/install-tools.sh
+          flutter --version
       - name: flutter pub get
         run: flutter pub get
       - name: Flutter analyze
-        run: flutter analyze
+        run: flutter analyze .
       - name: flutter unit test
         run: flutter test
